@@ -3,8 +3,8 @@ public with sharing class HomeWorkUtilities {
     public static void createParentsChilds(Integer parents, Integer childs) {
         createChilds(createParents(parents), childs);
     }
-
-    //support method for createParentsChilds. Create Parents records, insert it to DB
+    
+    //support method for createParentsChilds. Create Parents records, insert it to DB 
     //and return for createChilds method
     private static List<Test_Parent__c> createParents(Integer count) {
         List<Test_Parent__c> result = new List<Test_Parent__c>();
